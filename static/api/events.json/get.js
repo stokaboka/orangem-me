@@ -2,7 +2,7 @@
 
 	client.context.data = [
         {id: 12, date: 'April 2018', title: 'The conference <q>Microservice architecture and platform Azure Service Factory</q>', text: 'Participation in the conference <q>Microservice architecture and platform Azure Service Factory</q>'},
-        {id: 11, date: 'March 2018', title: 'Domain registration <q>OranGem.em</q>', text: 'Domain registration <q>OranGem.em</q>. We are open for work and creativity!'},
+        {id: 11, date: 'March 2018', title: 'Domain registration <q>OranGem.me</q>', text: 'Domain registration <q>OranGem.me</q>. We are open for work and creativity!'},
         {id: 10, date: 'December 2017', title: 'Deploy modules and databases to AWS EC2, RDS instances', text: 'Deploy <q>Impress Application Server</q> and <q>RedButton</q> on Amazon EC2 instance. A test database is deployed on the AWS RDS'},
         {id: 9, date: 'December 2017', title: 'Register Amazon EC2 and RDS instances', text: 'Register Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (RDS) instances'},
         {id: 8, date: 'October 2017', title: 'YappiDays\'17 Developer Conference', text: '<a href="https://vk.com/yappidays?z=album-77008017_248013889" class="a-href-link__text" target="_blank">The Yappi Days\'17 conference</a> focuses on the architecture of enterprise applications, modern technologies in processing BigData data and the best practices in software development.'},
