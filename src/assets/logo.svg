@@ -1,0 +1,27 @@
+<svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+
+  <filter id="dropshadow" height="200%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+    <feOffset dx="0" dy="0" result="offsetblur"/> <!-- how much to offset -->
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.4"/> <!-- slope is the opacity of the shadow -->
+    </feComponentTransfer>
+    <feMerge>
+      <feMergeNode/> <!-- this contains the offset blurred image -->
+      <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+    </feMerge>
+  </filter>
+
+  <g  transform="translate( 22, 10 )" style="filter:url(#dropshadow)">
+
+  <polygon style="stroke: #FFF; fill: #64856c; stroke-width: 4;" points="117 41 135 0 142 8 120 40"></polygon>
+  <ellipse style="stroke-width: 10; stroke: rgb(255, 255, 255); fill: orangered;"  cx="103" cy="127" rx="100" ry="100" ></ellipse>
+
+  <g transform="matrix(1, 0, 0, 1, -193, -7)">
+    <path d="M 220 96.3 C 236 46 284 18 317 36.3" style="fill: rgb(0, 207, 27); stroke: rgb(255, 255, 255); stroke-width: 6; stroke-linecap: round;"></path>
+    <path d="M 220 96 C 246 102 336 74 317 36" style="fill: rgb(0, 207, 27); stroke: rgb(255, 255, 255); stroke-width: 6; stroke-linecap: round;"></path>
+  </g>
+
+  </g>
+
+</svg>
