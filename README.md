@@ -1,6 +1,12 @@
-# orangem
+orangem.me single page application
 
-> OrangeM.me landing page
+VueJS, Node, Impress Application Server, AWS
+
+About Orangem.me project
+Technology
+Events
+Projects
+igorhorev@gmail.com
 
 ## Build Setup
 
