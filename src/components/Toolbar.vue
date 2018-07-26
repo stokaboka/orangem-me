@@ -4,7 +4,7 @@
       <orangem-logo class="toolbar-logo toolbar-logo__position-left" :size="46" :logo="logo"></orangem-logo>
       <span class="toolbar-title toolbar-title__font toolbar-title__position-left">OranGem.me</span>
     </div>
-    <nav class="nav nav__position-right">
+    <nav class="nav">
       <router-link
         v-for="link in links"
         :key="link.id"
@@ -88,9 +88,6 @@ export default {
     align-self: center;
   }
 
-  .nav__position-right{
-  }
-
   .nav__item{
     color: #111111;
     text-align: center;
@@ -135,8 +132,8 @@ export default {
     text-decoration: none;
     /*font-weight: bold;*/
     display: inline-block;
-    transition: color .5s ease-out;
-    transition: background-color .5s ease-out;
+    /*transition: color .5s ease-out;*/
+    transition: color, background-color .5s ease-out;
   }
   a:hover, a:active {
     background-color: orangered;
