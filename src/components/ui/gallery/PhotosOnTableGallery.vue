@@ -67,6 +67,13 @@ export default {
     sortDirection: {
       type: String,
       default: 'ASC'
+    },
+
+    clicksForAutoPlay: {
+      type: Number,
+      default () {
+        return 0
+      }
     }
   },
 
@@ -83,7 +90,6 @@ export default {
       autoPlayTimer: null,
       autoPlayTimeout: 2000,
       autoPlayClickCounter: 0,
-      clicksForAutoPlay: 3,
       xItems: []
     }
   },
@@ -122,7 +128,7 @@ export default {
         }
       }
 
-      if (this.clicksForAutoPlay === ++this.autoPlayClickCounter) {
+      if (this.clicksForAutoPlay > 0 && this.clicksForAutoPlay === ++this.autoPlayClickCounter) {
         this.startAutoPlay()
       }
     },

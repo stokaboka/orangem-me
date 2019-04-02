@@ -20,7 +20,7 @@
     </header>
     <div slot="text" class="short-article__text short-article__text-font">
       <p>
-        The heart and driving force behind our projects is <vendor-logo vendor="ias"/> running on <vendor-logo vendor="nodejs"/> and <vendor-logo vendor="ubuntu"/>
+        The heart and driving force behind our projects is <vendor-logo vendor="express"/> or <vendor-logo vendor="ias"/> running on <vendor-logo vendor="nodejs"/> and <vendor-logo vendor="ubuntu"/>
       </p>
       <p>For data storage we use various systems:
         <vendor-logo vendor="mysql"/>, <vendor-logo vendor="mongodb"/>, <vendor-logo vendor="postgre"/>

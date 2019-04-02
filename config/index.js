@@ -48,7 +48,8 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname,  process.env.NODE_ENV === 'production' ? '../dist/html.template' : '../dist/index.html'),
+    // index: path.resolve(__dirname,  process.env.NODE_ENV === 'production' ? '../dist/html.template' : '../dist/index.html'),
+    index: path.resolve(__dirname,  process.env.NODE_ENV === 'production' ? '../dist/index.html' : '../dist/index.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),

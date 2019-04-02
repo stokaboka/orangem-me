@@ -34,7 +34,7 @@ export default {
   },
   data () {
     return {
-      logo: require('../assets/orangem_logo_small.svg'),
+      logo: require('../../static/assets/orangem_logo_small.svg'),
       links: [
         {id: 0, title: 'About', href: '/', target: null},
         {id: 1, title: 'Technology', href: '#technology', target: null},

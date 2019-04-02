@@ -77,8 +77,8 @@ export default {
   }
 
   .gallery-index-item__heap{
-          background-color: #dddddd;
-          border: 1px solid orangered;
+          background-color: lightgrey;
+          border: 1px solid darkgray;
         }
 
   .gallery-index-item__load{

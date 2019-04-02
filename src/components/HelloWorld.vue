@@ -57,7 +57,7 @@ export default {
   },
   data () {
     return {
-      logo: require('../assets/orangem_logo_5_slices_skin.svg')
+      logo: require('../../static/assets/orangem_logo_5_slices_skin.svg')
     }
   }
 }
@@ -97,13 +97,11 @@ export default {
   }
 
   .hello-world {
-    display: block;
-    position: relative;
-    /*top: 80px;*/
-    height: 100%;
-    width: 80%;
-    margin: 0px auto 0px auto;
-    padding-top: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 0 10vw;
   }
 
   .hello-world__title-font {
@@ -114,11 +112,6 @@ export default {
   .hello-world__title-animation {
     animation: show-on-load .4s ease-in;
   }
-
-  /*.hello-world__article-header-font {*/
-    /*text-align: left;*/
-    /*font-weight: normal;*/
-  /*}*/
 
   @keyframes show-on-load {
     0% {
