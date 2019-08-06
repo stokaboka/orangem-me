@@ -1,9 +1,16 @@
 [
   {
+    "id": 8,
+    "title": "<q>Language Assessment</q> project\", \"text\": \"Start the <a href=\"http://orangem.me:4444\" class=\"a-href-link__text\" target=\"_blank\"><q>Language Assessment</q></a> project",
+    "description": "A unique effective system for assessing English proficiency and tracking the progress of a student learning a language.",
+    "stack": ["vuejs", "nodejs", "nestjs", "express", "docker"],
+    "items": []
+  },
+  {
     "id": 7,
-    "title": "<q>Testing Linguistic Abilities</q> project.",
+    "title": "<a href=\"http://orangem.me:3333\" class=\"a-href-link__text\" target=\"_blank\"><q>Testing Linguistic Abilities</q></a> project.",
     "description": "Designed for automated assessment of the ability of a person to be tested for learning a foreign language in automatic mode.",
-    "stack": ["vuejs", "nodejs", "express"],
+    "stack": ["vuejs", "nodejs", "express", "docker"],
     "items": []
   },
   {

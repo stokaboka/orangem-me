@@ -7,7 +7,7 @@
     <div class="short-article__text short-article__text-font">
       We are developing information systems on <vendor-logo vendor="opensource"/> technologies.
       Applications are created using advanced web technologies:
-      <vendor-logo vendor="angularjs"/>, <vendor-logo vendor="angular"/> and now <vendor-logo vendor="vuejs"/>
+      <vendor-logo vendor="angularjs"/>, <vendor-logo vendor="angular"/> and now <vendor-logo vendor="vuejs"/>, <vendor-logo vendor="quasar"/>
       <p>
         We build front-end with <vendor-logo vendor="nodejs"/>, <vendor-logo vendor="webpack"/>,<vendor-logo vendor="postcss"/> and <vendor-logo vendor="babel"/>
       </p>
@@ -20,11 +20,15 @@
     </header>
     <div slot="text" class="short-article__text short-article__text-font">
       <p>
-        The heart and driving force behind our projects is <vendor-logo vendor="express"/> or <vendor-logo vendor="ias"/> running on <vendor-logo vendor="nodejs"/> and <vendor-logo vendor="ubuntu"/>
+        The heart and driving force behind our projects is <vendor-logo vendor="nestjs"/>,
+        <vendor-logo vendor="express"/>,
+        <vendor-logo vendor="ias"/>
+        running on <vendor-logo vendor="nodejs"/> under <vendor-logo vendor="docker"/> and <vendor-logo vendor="ubuntu"/>
       </p>
       <p>For data storage we use various systems:
         <vendor-logo vendor="mysql"/>, <vendor-logo vendor="mongodb"/>, <vendor-logo vendor="postgre"/>
       <p>We have experience with <span><a class="a-href-link__text" target="_blank" href="https://www.oracle.com/ru/database/index.html">Oracle Database</a></span> and <span><a class="a-href-link__text" target="_blank" href="https://www.microsoft.com/sql-server">MS-SQL Server</a></span>.</p>
+
     </div>
   </article>
 
