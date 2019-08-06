@@ -96,10 +96,11 @@ export default {
 
   /* Container around content */
   .container {
-    padding: 0px 4rem;
     position: relative;
-    background-color: inherit;
     width: 50%;
+    margin-bottom: 1rem;
+    padding: 0px 4rem;
+    background-color: inherit;
   }
 
   /* The circles on the timeline */
