@@ -1,17 +1,64 @@
 [
   {
     "id": 8,
-    "title": "<q>Language Assessment</q> project\", \"text\": \"Start the <a href=\"http://orangem.me:4444\" class=\"a-href-link__text\" target=\"_blank\"><q>Language Assessment</q></a> project",
+    "title": "<a href=\"http://orangem.me:4444\" class=\"a-href-link__text\" target=\"_blank\"><q>Language Assessment</q></a> project",
     "description": "A unique effective system for assessing English proficiency and tracking the progress of a student learning a language.",
     "stack": ["vuejs", "nodejs", "nestjs", "express", "docker"],
-    "items": []
+    "items": [
+      {"id": 1, "url": "/static/assets/la/2-01.jpg", "title": "Welcome! Start screen.", "mobile": true},
+      {"id": 2, "url": "/static/assets/la/1-01.jpg", "title": "The test description.", "mobile": true},
+      {"id": 3, "url": "/static/assets/la/1-03.jpg", "title": "Vocabulary Assessment.", "mobile": true},
+      {"id": 4, "url": "/static/assets/la/1-04.jpg", "title": "Grammar Assessment.", "mobile": true},
+      {"id": 5, "url": "/static/assets/la/1-05.jpg", "title": "Auditory Assessment - step 1.", "mobile": true},
+      {"id": 6, "url": "/static/assets/la/1-06.jpg", "title": "Auditory Assessment - step 2.", "mobile": true},
+      {"id": 7, "url": "/static/assets/la/1-07.jpg", "title": "Auditory Assessment - step 3.", "mobile": true},
+      {"id": 8, "url": "/static/assets/la/1-08.jpg", "title": "Test result.", "mobile": true},
+      {"id": 9, "url": "/static/assets/la/2-02.jpg", "title": "Login form.", "mobile": true},
+      {"id": 10, "url": "/static/assets/la/2-03.jpg", "title": "Users and test execution attempts.", "mobile": true},
+      {"id": 11, "url": "/static/assets/la/2-04.jpg", "title": "Quick view of user result.", "mobile": true},
+      {"id": 12, "url": "/static/assets/la/2-05.jpg", "title": "Self Test Result", "mobile": true},
+      {"id": 13, "url": "/static/assets/la/2-06.jpg", "title": "Oral Test Result", "mobile": true},
+      {"id": 14, "url": "/static/assets/la/2-07.jpg", "title": "Decoding of results", "mobile": true},
+      {"id": 15, "url": "/static/assets/la/2-08.jpg", "title": "Oral Test", "mobile": true},
+      {"id": 16, "url": "/static/assets/la/2-09.jpg", "title": "Training Program", "mobile": true},
+      {"id": 17, "url": "/static/assets/la/2-10.jpg", "title": "Training Program - insert, edit records", "mobile": true},
+      {"id": 18, "url": "/static/assets/la/2-11.jpg", "title": "Test Questions", "mobile": true}
+    ]
   },
   {
     "id": 7,
     "title": "<a href=\"http://orangem.me:3333\" class=\"a-href-link__text\" target=\"_blank\"><q>Testing Linguistic Abilities</q></a> project.",
     "description": "Designed for automated assessment of the ability of a person to be tested for learning a foreign language in automatic mode.",
     "stack": ["vuejs", "nodejs", "express", "docker"],
-    "items": []
+    "items": [
+      {"id": 1, "url": "/static/assets/lt/1-01.jpg", "title": "Welcome! Start screen.", "mobile": true},
+      {"id": 2, "url": "/static/assets/lt/1-02.jpg", "title": "Check sound device.", "mobile": true},
+      {"id": 3, "url": "/static/assets/lt/1-03.jpg", "title": "Auto Training description.", "mobile": true},
+      {"id": 4, "url": "/static/assets/lt/1-04.jpg", "title": "Auto Training self test.", "mobile": true},
+      {"id": 5, "url": "/static/assets/lt/1-05.jpg", "title": "Auto Training result.", "mobile": true},
+      {"id": 6, "url": "/static/assets/lt/1-06.jpg", "title": "Mnemonick test - 1.", "mobile": true},
+      {"id": 7, "url": "/static/assets/lt/1-07.jpg", "title": "Mnemonick test - 2.", "mobile": true},
+      {"id": 8, "url": "/static/assets/lt/1-08.jpg", "title": "Mnemonick test result.", "mobile": true},
+      {"id": 9, "url": "/static/assets/lt/1-09.jpg", "title": "Definition of a language of test education - 1.", "mobile": true},
+      {"id": 10, "url": "/static/assets/lt/1-10.jpg", "title": "Definition of a language of test education - 2.", "mobile": true},
+      {"id": 11, "url": "/static/assets/lt/1-11.jpg", "title": "Definition of a language of test education - result.", "mobile": true},
+      {"id": 12, "url": "/static/assets/lt/1-12.jpg", "title": "Vocabulary knowledge test - 1.", "mobile": true},
+      {"id": 13, "url": "/static/assets/lt/1-13.jpg", "title": "Vocabulary knowledge test - 2.", "mobile": true},
+      {"id": 14, "url": "/static/assets/lt/1-14.jpg", "title": "The impact of auto training.", "mobile": true},
+      {"id": 15, "url": "/static/assets/lt/1-15.jpg", "title": "Auto Training.", "mobile": true},
+      {"id": 16, "url": "/static/assets/lt/1-16.jpg", "title": "Auto Training result.", "mobile": true},
+      {"id": 17, "url": "/static/assets/lt/1-17.jpg", "title": "Trial Learning - Passive", "mobile": true},
+      {"id": 18, "url": "/static/assets/lt/1-18.jpg", "title": "Test results", "mobile": true},
+      {"id": 19, "url": "/static/assets/lt/2-01.jpg", "title": "Admin mode - users", "mobile": true},
+      {"id": 20, "url": "/static/assets/lt/2-02.jpg", "title": "Admin mode - user tests", "mobile": true},
+      {"id": 21, "url": "/static/assets/lt/2-03.jpg", "title": "Admin mode - user test result", "mobile": true},
+      {"id": 22, "url": "/static/assets/lt/2-04.jpg", "title": "Admin mode - user test logs", "mobile": true},
+      {"id": 23, "url": "/static/assets/lt/2-05.jpg", "title": "Admin mode - dictionaries", "mobile": true},
+      {"id": 24, "url": "/static/assets/lt/2-06.jpg", "title": "Admin mode - cue points", "mobile": true},
+      {"id": 25, "url": "/static/assets/lt/2-07.jpg", "title": "Admin mode - lessons", "mobile": true},
+      {"id": 25, "url": "/static/assets/lt/2-08.jpg", "title": "Admin mode - steps", "mobile": true},
+      {"id": 25, "url": "/static/assets/lt/2-10.jpg", "title": "Admin mode - phases", "mobile": true}
+    ]
   },
   {
     "id": 6,
