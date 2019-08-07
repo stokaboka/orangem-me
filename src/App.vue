@@ -46,7 +46,7 @@ export default {
 <style>
 
   html {
-    font-size: 1vmax;
+    font-size: 14px;
     color: #222222;
   }
 

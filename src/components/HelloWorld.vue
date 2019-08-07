@@ -17,20 +17,20 @@
       </orangem-technology>
     </article>
 
-    <article id="#events" data-scroll-id="events">
-      <header>
-        <h1 class="hello-world__article-header-font h1-decor">Events</h1>
-      </header>
-      <orangem-events>
-      </orangem-events>
-    </article>
-
     <article id="#projects" data-scroll-id="projects">
       <header>
         <h1 class="hello-world__article-header-font h1-decor">Projects</h1>
       </header>
       <orangem-projects>
       </orangem-projects>
+    </article>
+
+    <article id="#events" data-scroll-id="events">
+      <header>
+        <h1 class="hello-world__article-header-font h1-decor">Events</h1>
+      </header>
+      <orangem-events>
+      </orangem-events>
     </article>
 
   </div>

@@ -38,8 +38,8 @@ export default {
       links: [
         {id: 0, title: 'About', href: '/', target: null},
         {id: 1, title: 'Technology', href: '#technology', target: null},
-        {id: 2, title: 'Events', href: '#events', target: null},
-        {id: 3, title: 'Projects', href: '#projects', target: null}
+        {id: 2, title: 'Projects', href: '#projects', target: null},
+        {id: 3, title: 'Events', href: '#events', target: null}
       ]
     }
   }
