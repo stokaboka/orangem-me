@@ -48,31 +48,18 @@ export default {
     background-color: #474e5d;
   }
 
-  /*a, a:link {*/
-    /*text-decoration: none;*/
-    /*color: #333333;*/
-    /*border-bottom: 3px solid rgb(255, 171, 109);*/
-    /*display: inline-block;*/
-    /*line-height: 0.85;*/
-    /*text-shadow:*/
-      /*2px 2px whitesmoke,*/
-      /*2px -2px whitesmoke,*/
-      /*-2px 2px whitesmoke,*/
-      /*-2px -2px whitesmoke;*/
-  /*}*/
-
   h2{
     margin: 0px;
     padding: 10px 20px;
     color: white;
     background-color: #ff9a00;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     border-radius: 3px 3px 0px 0px;
   }
 
   p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   /* The actual timeline (the vertical ruler) */
@@ -86,7 +73,7 @@ export default {
   .timeline::after {
     content: '';
     position: absolute;
-    width: 10px;
+    width: 7px;
     background-color: #555555;
     top: 0;
     bottom: 0;
@@ -109,10 +96,9 @@ export default {
     position: absolute;
     width: 2rem;
     height: 2rem;
-    right: -1.5rem;
+    right: -0.95rem;
     background-color: white;
     border: 0.5rem solid #555555;
-    /*box-shadow: 0 0 0px 0.3rem rgb(255,255,255);*/
     box-shadow: 0 0 0px 0.3rem whitesmoke;
     top: 1rem;
     border-radius: 50%;
@@ -156,8 +142,15 @@ export default {
   }
 
   /* Fix the circle for containers on the right side */
+  .left::after {
+    top: 1rem;
+    right: 0;
+    margin-right: -1.3rem;
+  }
   .right::after {
-    left: -1.5rem;
+    top: 1rem;
+    left: 0;
+    margin-left: -1.6rem;
   }
 
   /* The actual content */
@@ -170,7 +163,7 @@ export default {
   }
 
   .content-body{
-    padding: 1rem 2rem;
+    padding: 1rem;
     border-radius: 0px 0px 3px 3px;
 
     /*overflow: hidden;*/
@@ -195,7 +188,7 @@ export default {
 
     /* Full-width containers */
     .container {
-      width: 100%;
+      width: 80vw;
       padding-left: 5.4rem;
       padding-right: 1rem;
     }
@@ -207,12 +200,13 @@ export default {
 
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-      left: 0.5rem;
+      left: 0;
+      margin-left: 0.35rem;
     }
 
     /* Make all right containers behave like the left ones */
     .right {
-      left: 0px;
+      left: 0;
     }
   }
 </style>

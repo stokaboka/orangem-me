@@ -80,17 +80,6 @@ export default {
     font-size: 2rem;
   }
 
-  /*.h1-decor{*/
-    /*margin-top: 8rem;*/
-    /*border-bottom: orangered 0.2rem solid;*/
-    /*padding-left: 1vmax;*/
-
-    /*background-color: orangered;*/
-    /*color: white;*/
-
-    /*padding: 1rem 2rem;*/
-  /*}*/
-
   .h2-decor{
     border-left: orangered 1rem solid;
     padding-left: 1vmax;
