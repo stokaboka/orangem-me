@@ -1,7 +1,7 @@
 <template>
     <div id="#projects" data-scroll-id="projects">
 
-      <article v-for="project in projects" v-bind:key="project.id" class="projects__container" v-om-scroll="onScrollHandler">
+      <article v-for="project in projects" v-bind:key="project.id" class="projects__container" v-om-scroll="{ key: project.id, handler: onScrollHandler }">
         <header class="projects__header">
           <h2 class="hello-world__article-header-font h2-decor" v-html="project.title"></h2>
           <span class="short-article__text short-article__text-font" v-html="project.description"></span>
@@ -16,7 +16,7 @@
         </header>
 
         <photos-on-table-gallery class="projects__gallery"
-                                 v-if="project.items.length > 0"
+                                 v-if="project.visible && project.items.length > 0"
                                  v-bind:id="project.id"
                                  v-bind:items="project.items"
                                  sort-by="id"
@@ -54,14 +54,33 @@ export default {
     this.projects = this.prepareData(this.projects)
   },
   methods: {
-    onScrollHandler (evt, el) {
-      const { scrollY } = window
-      const {offsetTop, clientHeight} = el
-      console.log('el.offsetTop', offsetTop, clientHeight, scrollY)
-      return scrollY > offsetTop - clientHeight
+    onScrollHandler (key, evt, el) {
+      const { scrollY, innerHeight } = window
+      const windowHeightOffset = innerHeight / 2
+      const {offsetTop} = el
+      // console.log('el.offsetTop', offsetTop, clientHeight, scrollY)
+      // console.log(el)
+      if (scrollY > offsetTop - windowHeightOffset) {
+        this.projects = this.projects.map(e => {
+          return {
+            ...e,
+            visible: e.id === key || e.visible
+          }
+        })
+        return true
+      }
+      return false
     },
     prepareData: function (data) {
-      return data.sort(this.sortItems)
+      // return data.sort(this.sortItems)
+      return data
+        .sort((a, b) => b.id - a.id)
+        .map(e => {
+          return {
+            ...e,
+            visible: false
+          }
+        })
     },
     sortItems: function (a, b) {
       if (a.id < b.id) {

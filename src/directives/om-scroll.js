@@ -4,7 +4,8 @@ export const OmScroll = {
   inserted: function (el, binding) {
     // console.log('inserted', el, binding)
     let f = function (evt) {
-      if (binding.value(evt, el)) {
+      const {key, handler} = binding.value
+      if (handler(key, evt, el)) {
         window.removeEventListener('scroll', f)
       }
     }
