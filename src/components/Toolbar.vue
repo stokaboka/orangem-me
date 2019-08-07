@@ -53,14 +53,13 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
-    right: 0;
     z-index: 999;
     width: 100vw;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: azure;
   }
@@ -80,7 +79,7 @@ export default {
     margin-right: 0.5rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 
@@ -121,17 +120,14 @@ export default {
   a, a:link, a:visited {
     background-color: azure;
     color: #333333;
-    /*padding: 1rem 2rem;*/
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 60px;
-    line-height: 60px;
+    height: 4rem;
+    line-height: 4rem;
     vertical-align: center;
     text-align: center;
     text-decoration: none;
-    /*font-weight: bold;*/
     display: inline-block;
-    /*transition: color .5s ease-out;*/
     transition: color, background-color .5s ease-out;
   }
   a:hover, a:active {
@@ -141,6 +137,24 @@ export default {
 
   .drop-shadow {
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) ;
+  }
+
+  @media screen and (max-width: 760px) {
+    .nav {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
+    }
+
+    .nav__item{
+      font-size: 1rem;
+    }
+
+    a, a:link, a:visited {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      height: 2rem;
+      line-height: 2rem;
+    }
   }
 
 </style>
