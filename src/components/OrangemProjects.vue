@@ -1,8 +1,8 @@
 <template>
     <div id="#projects" data-scroll-id="projects">
 
-      <article class="projects__container" v-for="project in projects" v-bind:key="project.id">
-        <header style="display: flex; flex-flow: column nowrap">
+      <article v-for="project in projects" v-bind:key="project.id" class="projects__container" v-om-scroll="onScrollHandler">
+        <header class="projects__header">
           <h2 class="hello-world__article-header-font h2-decor" v-html="project.title"></h2>
           <span class="short-article__text short-article__text-font" v-html="project.description"></span>
           <div v-if="project.stack.length > 0" class="short-article__text short-article__text-font">
@@ -34,10 +34,12 @@ import PhotosOnTableGallery from './ui/gallery/PhotosOnTableGallery'
 import {HTTP} from './api'
 import VendorLogo from '@/components/VendorLogo'
 import DynamicHtml from '@/components/DynamicHtml'
+import { OmScroll } from '../directives/om-scroll'
 
 export default {
   name: 'orangem-projects',
   components: {DynamicHtml, VendorLogo, PhotosOnTableGallery},
+  directives: {OmScroll},
   created () {
     HTTP.get('projects.json')
       .then(response => {
@@ -52,6 +54,12 @@ export default {
     this.projects = this.prepareData(this.projects)
   },
   methods: {
+    onScrollHandler (evt, el) {
+      const { scrollY } = window
+      const {offsetTop, clientHeight} = el
+      console.log('el.offsetTop', offsetTop, clientHeight, scrollY)
+      return scrollY > offsetTop - clientHeight
+    },
     prepareData: function (data) {
       return data.sort(this.sortItems)
     },
@@ -185,6 +193,12 @@ export default {
 </script>
 
 <style scoped>
+
+.projects__header {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .projects__container {
   display: flex;
   flex-flow: column nowrap;
