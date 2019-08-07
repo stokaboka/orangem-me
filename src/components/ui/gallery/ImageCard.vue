@@ -9,7 +9,10 @@
 </template>
 
 <script>
-// v-show="loaded"
+
+const transitionToTop = 'transform 0.5s 0.3s'
+const transitionToHeap = 'transform 0.3s'
+
 export default {
   name: 'image-card',
 
@@ -20,10 +23,21 @@ export default {
       style: {},
       animationStyles: [],
       amplitudeFlying: 2000,
-      toTopStyle: { transform: 'rotateX(20deg) rotateZ(-15deg)  translateX(500px)  scale(0.75)', 'z-index': 0 },
-      topStyle: { transform: 'rotateX(0deg) rotateZ(0deg) translateX(0px) translateY(50px) scale(1)', 'z-index': 1 },
+      toTopStyle: {
+        transition: transitionToTop,
+        transform: 'rotateX(20deg) rotateZ(-15deg)  translateX(500px)  scale(0.75)',
+        'z-index': 0
+      },
+      topStyle: {
+        transform: 'rotateX(0deg) rotateZ(0deg) translateX(0px) translateY(50px) scale(1)',
+        'z-index': 1
+      },
       // topZeroStyle: { transform: 'translateX(0px) translateY(50px)', 'z-index': 1 },
-      toHeapStyle: { transform: 'rotateX(20deg) rotateZ(-15deg) translateX(-500px)  scale(0.75)', 'z-index': 1 },
+      toHeapStyle: {
+        transition: transitionToHeap,
+        transform: 'rotateX(20deg) rotateZ(-15deg) translateX(-500px)  scale(0.75)',
+        'z-index': 1
+      },
       preLoadStyle: this.generatePreLoadStyle(),
       heapStyle: this.generateTransformStyleForItem()
     }
@@ -82,8 +96,15 @@ export default {
       let intViewportWidth = event ? event.target.innerWidth : window.innerWidth
 
       this.amplitudeFlying = Math.round(intViewportWidth / 2)
-      this.toTopStyle = { transform: `rotateX(20deg) rotateZ(-15deg)  translateX(${this.amplitudeFlying}px)  scale(0.75)`, 'z-index': 0 }
-      this.toHeapStyle = { transform: `rotateX(20deg) rotateZ(-15deg) translateX(-${this.amplitudeFlying}px)  scale(0.75)`, 'z-index': 1 }
+      this.toTopStyle = {
+        transition: transitionToTop,
+        transform: `rotateX(20deg) rotateZ(-15deg)  translateX(${this.amplitudeFlying}px)  scale(0.75)`,
+        'z-index': 0
+      }
+      this.toHeapStyle = {
+        transition: transitionToHeap,
+        transform: `rotateX(20deg) rotateZ(-15deg) translateX(-${this.amplitudeFlying}px)  scale(0.75)`,
+        'z-index': 1 }
     },
 
     getRandomOfBaseValue: (base, borders) => {
