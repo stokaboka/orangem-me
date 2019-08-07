@@ -53,13 +53,13 @@ export default {
     padding: 10px 20px;
     color: white;
     background-color: #ff9a00;
-    font-size: 1.5rem;
+    font-size: 2rem;
 
     border-radius: 3px 3px 0px 0px;
   }
 
   p{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   /* The actual timeline (the vertical ruler) */

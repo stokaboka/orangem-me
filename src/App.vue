@@ -79,7 +79,7 @@ export default {
     text-decoration: none;
     color: #333333;
     border-bottom: 2px solid #ff9a00;
-    display: inline-block;
+    /*display: inline-block;*/
     line-height: 0.9;
     text-shadow:
       1px 1px whitesmoke,
